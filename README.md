@@ -38,3 +38,5 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 
 // TODO: add local wordpress installation and static site generator. Also, host my domain name.
+// https://www.hywel.me/static/site/wordpress/2016/07/17/fast-free-static-website-with-wordpress-and-github-pages.html
+// https://www.hywel.me/static/sites/2015/12/06/github-pages-custom-domain-names-with-cloudflare.html
