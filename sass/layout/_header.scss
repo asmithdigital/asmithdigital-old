@@ -1,0 +1,93 @@
+// general layout items 
+
+.logo {
+	@media (max-width: 767px){
+		margin-left: 10px;
+	}
+	h1 {
+	    font-family: 'Nothing You Could Do', cursive;
+	    position: relative;
+	    padding-left: 41px;
+	    font-size: 28px;
+	    margin: 0;
+	    font-weight: normal;
+	    .logo-a {
+		    padding: 10px 0 0 20px;
+		    font-family: helvetica;
+		    background-color: rgb(96,158,234);
+		    background-color: rgba(96,158,234,1);
+		    color: #ffffff;
+		    margin-right: 5px;
+		    position: absolute;
+		    top: -2px;
+		    left: 0px;
+		    line-height: 24px;
+		}
+	}
+}
+
+header{
+	position: relative;
+	margin: 65px 85px 0;
+	// transition: margin-top 300ms ease-in-out;
+	// transition: all .2s;
+	@media (max-width: 979px){
+		margin: 20px;
+	}
+	@media (max-width: 767px){
+		margin: 20px 0;
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+	nav {
+		position: absolute;
+		right: 0;
+		top: 3px;
+		@media (max-width: 767px){
+			position: static;
+			margin-top: 20px;
+			overflow: hidden;
+		}
+		a {
+			font-size: 13px;
+			margin-left: 25px;
+			transition: all .2s;
+			padding: 7px 15px;
+			font-weight: 500;
+			display: block;
+			float: left;
+			text-transform: uppercase;
+			color: #333;
+			@media (max-width: 767px){
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			&.active {
+				color: #f16162;
+			}
+			&:hover{
+				color: #f16162;
+			}
+			&:first-child{
+				@media (max-width: 767px){
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	&.fixed-header{
+		position: fixed;
+		width: 100%;
+		margin: 0;
+		background: rgba(#f6f5f6, .8);
+		z-index: 22;
+		height: 80px;
+		.logo{
+			position: absolute;
+			top: 20px; left: 20px;
+		}
+		nav{
+			top: 20px; right: 20px;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+footer {
+	height: 100px;
+	width: auto;
+	background: #252728;
+	.inner {
+		width: auto;
+		max-width: 1080px;
+		margin: 0 auto;
+		padding: 42px 20px 0;
+		color: #54595b;
+		text-align: center;
+		#logo-footer {
+			display: inline-block;
+			margin-top: -15px;
+			padding-top: 60px;
+			width: 50px;
+		}
+		p {
+			float: left;
+			font-weight: bold;
+			font-size: 12px;
+			text-align: left;
+			margin: 0;
+			&.social {
+				float: right;
+				#fb-link {
+					margin-right: 80px;
+				}
+			}
+		}
+		 a {
+			color: #fff;
+		}
+	}
+}
